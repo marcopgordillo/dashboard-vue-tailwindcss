@@ -11,21 +11,21 @@ import HelloWorld from './components/HelloWorld.vue'
     </div>
     <div class="p-8">
       <h1 class="font-black text-2xl sm:text-3xl mb-4 text-pale-blue-600 tracking-wider">Order Summary</h1>
-      <p class="font-medium tracking-wider mb-6 text-pale-blue-500 leading-normal text-sm sm:text-base">You can now listen to millions of songs, audiobooks, and podcast on any device anywhere you like!</p>
+      <p class="plan__text mb-6">You can now listen to millions of songs, audiobooks, and podcast on any device anywhere you like!</p>
       <div class="flex flex-row justify-between items-center bg-pale-blue-400 p-4 rounded-xl mb-6">
         <div class="flex flex-row">
           <img class="w-12 h-12" src="@/assets/icon-music.svg" alt="">
           <div class="ml-4">
-            <p class="font-medium tracking-wider mb-0 text-left text-pale-blue-500 leading-normal text-sm sm:text-base">
+            <p class="plan__text mb-0 text-left">
               <strong class="text-black">Annual Plan</strong>
             </p>
-            <p class="font-medium tracking-wider mb-0 text-left text-pale-blue-500 leading-normal text-sm sm:text-base">$59.99/year</p>
+            <p class="plan__text mb-0 text-left">$59.99/year</p>
           </div>
         </div>
         <a class="text-pale-blue-200 hover:text-pale-blue-300 transition duration-500 ease-in-out font-bold text-xs sm:text-sm tracking-wide no-underline" href="#">Change</a>
       </div>
-      <button class="cursor-pointer block rounded-xl border-transparent bg-pale-blue-200 hover:bg-pale-blue-300 focus:bg-pale-blue-300 text-white shadow-xl w-full py-4 px-16 mb-6 font-bold text-base transition duration-500 ease-in-out">Proceed to Payment</button>
-      <button class="cursor-pointer block rounded-xl border-transparent bg-none text-pale-blue-500 hover:text-pale-blue-600 focus:text-pale-blue-600 shadow-xl w-full py-4 px-16 mb-0 font-bold text-base transition duration-500 ease-in-out">Cancel Order</button>
+      <button class="btn bg-pale-blue-200 hover:bg-pale-blue-300 focus:bg-pale-blue-300 text-white mb-6">Proceed to Payment</button>
+      <button class="btn text-pale-blue-500 hover:text-pale-blue-600 focus:text-pale-blue-600 mb-0">Cancel Order</button>
     </div>
   </section>
   <div class="my-4 mx-0 text-xs text-center">

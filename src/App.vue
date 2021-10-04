@@ -5,31 +5,17 @@ import HelloWorld from './components/HelloWorld.vue'
 </script>
 
 <template>
-  <section class="container w-90vw max-w-md bg-white rounded-3xl overflow-hidden text-center flex flex-col justify-center items-center shadow-xl">
-    <div>
-      <img class="w-full block object-cover" src="@/assets/illustration-hero.svg" alt="">
-    </div>
-    <div class="p-8">
-      <h1 class="font-black text-2xl sm:text-3xl mb-4 text-pale-blue-600 tracking-wider">Order Summary</h1>
-      <p class="plan__text mb-6">You can now listen to millions of songs, audiobooks, and podcast on any device anywhere you like!</p>
-      <div class="flex flex-row justify-between items-center bg-pale-blue-400 p-4 rounded-xl mb-6">
-        <div class="flex flex-row">
-          <img class="w-12 h-12" src="@/assets/icon-music.svg" alt="">
-          <div class="ml-4">
-            <p class="plan__text mb-0 text-left">
-              <strong class="text-black">Annual Plan</strong>
-            </p>
-            <p class="plan__text mb-0 text-left">$59.99/year</p>
-          </div>
-        </div>
-        <a class="text-pale-blue-200 hover:text-pale-blue-300 transition duration-500 ease-in-out font-bold text-xs sm:text-sm tracking-wide no-underline" href="#">Change</a>
+  <div class="lg:container lg:mx-auto bg-green-400">
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-3">
+      <div class="font-sans bg-yellow-300 w-full h-40 text-center text-xl md:col-span-2">
+        Grid Col 1
       </div>
-      <button class="btn bg-pale-blue-200 hover:bg-pale-blue-300 focus:bg-pale-blue-300 text-white mb-6">Proceed to Payment</button>
-      <button class="btn text-pale-blue-500 hover:text-pale-blue-600 focus:text-pale-blue-600 mb-0">Cancel Order</button>
+      <div class="font-sans bg-yellow-300 w-full h-40 text-center text-xl">
+        Grid Col 2
+      </div>
+      <div class="font-sans bg-yellow-300 w-full h-40 text-center text-xl">
+        Grid Col 3
+      </div>
     </div>
-  </section>
-  <div class="my-4 mx-0 text-xs text-center">
-    Challenge by <a class="text-pale-blue-700" href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Marco Gordillo</a>.
   </div>
 </template>

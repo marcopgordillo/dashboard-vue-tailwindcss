@@ -3,11 +3,4 @@
 @tailwind utilities;
 
 @layer components {
-    .btn {
-        @apply cursor-pointer block rounded-xl border-transparent shadow-xl w-full py-4 px-16 font-bold text-base transition duration-500 ease-in-out; 
-    }
-
-    .plan__text {
-        @apply font-medium tracking-wider text-pale-blue-500 leading-normal text-sm sm:text-base;
-    }
 }

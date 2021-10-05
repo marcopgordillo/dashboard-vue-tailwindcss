@@ -1,5 +1,7 @@
 <script setup>
 import { ref } from 'vue'
+import MainNav from '@/components/MainNav.vue'
+import { CubeIcon } from '@heroicons/vue/solid'
 
 let showSidebar = ref(false)
 </script>
@@ -8,13 +10,10 @@ let showSidebar = ref(false)
 <div class="flex h-full">
   <div class="fixed lg:static bottom-0 w-full lg:w-24 lg:h-full z-10">
     <div class="w-full lg:w-24 h-full bg-blue-800 relative">
-      <a href="#" class="hidden lg:block absolute top-10 left-1/2 -translate-x-1/2 w-14 h-14 bg-yellow-300 rounded-xl"></a>
-      <div class="flex lg:flex-col items-center justify-center h-full space-x-4 lg:space-x-0 lg:space-y-4 py-4">
-        <a href="#" class="block w-14 h-14 bg-white rounded-xl"></a>
-        <a href="#" class="block w-14 h-14 bg-white rounded-xl"></a>
-        <a href="#" class="block w-14 h-14 bg-white rounded-xl"></a>
-        <a href="#" class="block w-14 h-14 bg-white rounded-xl"></a>
-      </div>
+      <a href="#" class="hidden lg:flex lg:justify-center lg:items-center absolute top-10 left-1/2 -translate-x-1/2 w-14 h-14 rounded-xl hover:bg-white hover:bg-opacity-50">
+        <CubeIcon class="h-8 w-8 text-white" />
+      </a>
+      <MainNav />
     </div>
   </div>
   <div class="w-full p-4 lg:p-10">

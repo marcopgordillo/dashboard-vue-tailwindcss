@@ -1,21 +1,50 @@
 <script setup>
-// This starter template is using Vue 3 <script setup> SFCs
-// Check out https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup
-import HelloWorld from './components/HelloWorld.vue'
+import { ref } from 'vue'
+
+let showSidebar = ref(false)
 </script>
 
 <template>
-  <div class="lg:container lg:mx-auto bg-green-400">
-    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-3">
-      <div class="font-sans bg-yellow-300 w-full h-40 text-center text-xl md:col-span-2">
-        Grid Col 1
-      </div>
-      <div class="font-sans bg-yellow-300 w-full h-40 text-center text-xl">
-        Grid Col 2
-      </div>
-      <div class="font-sans bg-yellow-300 w-full h-40 text-center text-xl">
-        Grid Col 3
+<div class="flex h-full">
+  <div class="fixed lg:static bottom-0 w-full lg:w-24 lg:h-full z-10">
+    <div class="w-full lg:w-24 h-full bg-blue-800 relative">
+      <a href="#" class="hidden lg:block absolute top-10 left-1/2 -translate-x-1/2 w-14 h-14 bg-yellow-300 rounded-xl"></a>
+      <div class="flex lg:flex-col items-center justify-center h-full space-x-4 lg:space-x-0 lg:space-y-4 py-4">
+        <a href="#" class="block w-14 h-14 bg-white rounded-xl"></a>
+        <a href="#" class="block w-14 h-14 bg-white rounded-xl"></a>
+        <a href="#" class="block w-14 h-14 bg-white rounded-xl"></a>
+        <a href="#" class="block w-14 h-14 bg-white rounded-xl"></a>
       </div>
     </div>
   </div>
+  <div class="w-full p-4 lg:p-10">
+    <div class="bg-gray-300 rounded-xl h-14">search</div>
+
+    <div class="bg-gray-300 rounded-xl mt-4 p-2 lg:hidden">
+      <button class="block w-32 h-10 bg-blue-600 mx-auto" @click="showSidebar = !showSidebar">Toggle sidebar</button>
+    </div>
+
+    <div class="overflow-hidden">
+      <div class="lg:transform-none transition-transform duration-300" :class="showSidebar ? '-translate-x-full' : ''">
+        <div class="flex mt-4 lg:mt-10 lg:space-x-10">
+          <div class="w-full flex-shrink-0 lg:w-3/4 lg:flex-shrink rounded-xl">
+            <div class="flex space-x-4 lg:space-x-10">
+              <div class="bg-gray-300 rounded-xl h-28 w-full"></div>
+              <div class="bg-gray-300 rounded-xl h-28 w-full"></div>
+              <div class="bg-gray-300 rounded-xl h-28 w-full"></div>
+            </div>
+
+            <div class="bg-gray-300 rounded-xl h-28 mt-4 lg:mt-10 w-full"></div>
+
+            <div class="flex space-x-4 lg:space-x-10 mt-4 lg:mt-10">
+              <div class="bg-gray-300 rounded-xl h-28 w-full"></div>
+              <div class="bg-gray-300 rounded-xl h-28 w-full"></div>
+            </div>
+          </div>
+          <div class="w-full flex-shrink-0 lg:w-1/4 lg:flex-shrink bg-gray-300 rounded-xl h-52">sidebar</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 </template>

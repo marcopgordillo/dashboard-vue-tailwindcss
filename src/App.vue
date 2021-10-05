@@ -1,6 +1,7 @@
 <script setup>
 import { ref } from 'vue'
 import MainNav from '@/components/MainNav.vue'
+import Tools from '@/components/Tools.vue'
 import { CubeIcon } from '@heroicons/vue/solid'
 
 let showSidebar = ref(false)
@@ -17,8 +18,7 @@ let showSidebar = ref(false)
     </div>
   </div>
   <div class="w-full p-4 lg:p-10">
-    <div class="bg-gray-300 rounded-xl h-14">search</div>
-
+    <Tools />
     <div class="bg-gray-300 rounded-xl mt-4 p-2 lg:hidden">
       <button class="block w-32 h-10 bg-blue-600 mx-auto" @click="showSidebar = !showSidebar">Toggle sidebar</button>
     </div>

@@ -25,7 +25,7 @@
                             @click="isOpen = !isOpen"
                             class="w-10 h-10 rounded-full overflow-hidden focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-800 focus:ring-offset-white"
                         >
-                            <img src="https://tailwindcss.com/_next/static/media/sarah-dayan.a8ff3f1095a58085a82e3bb6aab12eb2.jpg" alt="" class="w-10 h-10 object-cover">
+                            <img src="@/assets/sarah-dayan.jpg" alt="" class="w-10 h-10 object-cover">
                         </button>
                         <button
                             v-if="isOpen"

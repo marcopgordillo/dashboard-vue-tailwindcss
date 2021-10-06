@@ -51,10 +51,7 @@
 
             <div class="bg-gray-300 rounded-xl h-28 mt-4 lg:mt-10 w-full"></div>
 
-            <div class="flex space-x-4 lg:space-x-10 mt-4 lg:mt-10">
-              <div class="bg-gray-300 rounded-xl h-28 w-full"></div>
-              <div class="bg-gray-300 rounded-xl h-28 w-full"></div>
-            </div>
+            <Blog />
           </div>
           <div class="w-full flex-shrink-0 lg:w-1/4 lg:flex-shrink bg-gray-300 rounded-xl h-52">sidebar</div>
         </div>
@@ -69,6 +66,7 @@ import { ref } from 'vue'
 import { ChartBarIcon, ChartPieIcon, CashIcon } from '@heroicons/vue/outline'
 import MainNav from '@/components/MainNav.vue'
 import Tools from '@/components/Tools.vue'
+import Blog from '@/components/Blog.vue'
 
 let showSidebar = ref(false)
 </script>

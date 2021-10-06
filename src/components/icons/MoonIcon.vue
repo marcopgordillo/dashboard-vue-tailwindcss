@@ -6,8 +6,14 @@
                 stroke-width: 0.8;
                 stroke-linecap: round;
             "
-            stroke-dasharray="72, 100"
+            :stroke-dasharray="`${percentage}, 100`"
             d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
         />
     </svg>
 </template>
+
+<script setup>
+defineProps({
+    percentage: Number,
+})
+</script>

@@ -16,7 +16,7 @@
                 <div 
                     class="absolute w-32 text-blue-800 scale-115" 
                 >
-                    <MoonIcon />
+                    <MoonIcon percentage="72" />
                 </div>
             </div>
             <div class="text-white bg-blue-800 rounded w-auto absolute top-0 right-0 lg:-right-10 px-3 py-2 text-sm shadow-lg">$10,600</div>

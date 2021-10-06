@@ -29,7 +29,13 @@
 
             <Blog />
           </div>
-          <div class="w-full flex-shrink-0 lg:w-1/4 lg:flex-shrink bg-gray-300 rounded-xl h-52">sidebar</div>
+          <div class="w-full flex-shrink-0 lg:w-1/4 lg:flex-shrink">
+            <div class="bg-indigo-50 rounded-xl p-5 space-y-10 flex flex-col">
+              <Percentage />
+              <Cards />
+              <Transactions />
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -45,6 +51,9 @@ import Tools from '@/components/Tools.vue'
 import Blog from '@/components/Blog.vue'
 import SmallCards from '@/components/SmallCards.vue'
 import Candlesticks from '@/components/Candlesticks.vue'
+import Percentage from '@/components/Percentage.vue'
+import Cards from '@/components/Cards.vue'
+import Transactions from '@/components/Transactions.vue'
 
 let showSidebar = ref(false)
 </script>

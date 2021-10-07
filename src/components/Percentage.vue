@@ -14,7 +14,7 @@
                     </div>
                 </div>
                 <div 
-                    class="absolute w-32 text-blue-800 scale-115" 
+                    class="absolute w-32 text-blue-800 scale-[1.15]" 
                 >
                     <MoonIcon percentage="72" />
                 </div>

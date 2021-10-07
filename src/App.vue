@@ -10,11 +10,27 @@
   </div>
   <div class="w-full p-4 lg:p-10">
     <Tools />
-    <div class="bg-gray-300 rounded-xl mt-4 p-2 lg:hidden">
+    <div class="mt-4 p-2 lg:hidden">
       <button 
-        class="block w-32 h-10 bg-blue-600 mx-auto" @click="showSidebar = !showSidebar"
+        class="flex w-32 h-10 bg-white rounded-xl mx-auto shadow-lg relative focus:outline-none"
+        @click="showSidebar = !showSidebar"
       >
-        Toggle sidebar
+        <div
+          class="w-16 h-full bg-blue-400 absolute top-0 rounded-lg duration-300"
+          :class="showSidebar ? 'translate-x-full' : ''"
+        ></div>
+        <div
+          class="flex justify-center items-center w-16 h-full transform duration-300"
+          :class="showSidebar ? 'text-gray-400' : 'text-white'"
+        >
+          <ChartBarIcon class="w-6" />
+        </div>
+        <div
+          class="flex justify-center items-center w-16 h-full transform duration-300"
+          :class="!showSidebar ? 'text-gray-400' : 'text-white'"
+        >
+          <PhotographIcon class="w-6" />
+        </div>
       </button>
     </div>
 
@@ -45,7 +61,7 @@
 
 <script setup>
 import { ref } from 'vue'
-import { CubeIcon } from '@heroicons/vue/solid'
+import { CubeIcon, ChartBarIcon, PhotographIcon } from '@heroicons/vue/solid'
 import MainNav from '@/components/MainNav.vue'
 import Tools from '@/components/Tools.vue'
 import Blog from '@/components/Blog.vue'

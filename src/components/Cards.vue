@@ -2,15 +2,15 @@
     <div class="flex justify-between">
         <h3 class="text-lg font-semibold text-gray-700">Cards</h3>
         <a href="#" class="inline-block w-6 text-gray-400 hover:text-gray-800">
-
+            <DotsHorizontalIcon />
         </a>
     </div>
-    <div class="mt-4">
+    <div class="mt-4 md:w-1/2 lg:w-full md:mx-auto">
         <div class="relative w-full bg-blue-800 rounded-lg overflow-hidden pt-3/5">
            <div class="absolute top-0 -right-1/2 w-full pt-3/5 -rotate-12 bg-blue-200 rounded-3xl"></div> 
            <div class="absolute top-3/4 left-0 w-full pt-3/5 rotate-45 bg-yellow-300 rounded-3xl"></div> 
 
-           <div class="absolute inset-0 py-6 px-4 flex flex-col justify-between">
+           <div class="absolute inset-0 py-6 lg:py-1 px-4 lg:px-2 flex flex-col justify-between">
                <div class="flex justify-between items-center">
                    <div class="block w-12 h-8 bg-white bg-opacity-80 rounded"></div>
                    <div class="w-12 text-white">
@@ -35,5 +35,6 @@
 </template>
 
 <script setup>
+import { DotsHorizontalIcon } from '@heroicons/vue/outline'
 import { VisaLogo } from '@/components/icons'
 </script>
